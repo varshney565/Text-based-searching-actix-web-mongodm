@@ -2,10 +2,10 @@
 FROM rust:1.48
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /src
 
 # Copy the application files into the working directory
-COPY . /app
+COPY . /src
 
 # Build the application
 RUN cargo build --release
